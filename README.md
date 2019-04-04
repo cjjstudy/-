@@ -19,4 +19,34 @@ extend是把列表所有元素与之前合并，而append是把列表当做一�
 函数说明:创建绘制面板
    fig.clf()
 
+#2019-04-04
+朴素贝叶斯
+1、定义loadDataSet() 输入数据
+   包含postingList数据集（每一行一个文档，[ [],[] ])
+      classVec类别标签（1包含侮辱性文字，0全部正常 [] )
+   并返回
+2、定义createVocabList(dataSet) 得到不重复数据
+   def createVocabList(dataSet):
+       vocabSet = set([])
+       for document in dataSet:
+           vocabSet = vocabSet|set(document)
+       return list(vocabSet)
+   注意：dataSet用上面返回数据值
+   返回形式vocabSet，即不重复的数据
+3、定义setOfWords2Vec(vocabList,inputSet)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
